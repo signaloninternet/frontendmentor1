@@ -1,0 +1,100 @@
+* {
+    background-color: rgb(238, 255, 251);
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 6vw;
+    padding: 0 2rem;
+}
+
+.header {
+    margin-bottom: 4rem;
+}
+
+.subheading {
+    font-weight: 700;
+    color: rgb(156, 156, 156);
+}
+
+.heading {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+    color: black;
+}
+
+.description {
+    color: rgb(100, 100, 100);
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: left;
+    margin: 20px;
+    max-width: 300px;
+    display: grid;
+    grid-template-areas: 
+        "title title"
+        "description description"
+        "footer last";
+    gap: 1rem;
+}
+
+.feature-card h4 {
+    background: white;
+    margin: 0;
+    color: hsl(228, 45%, 44%);
+    grid-area: title;
+}
+
+.feature-card p {
+    background: white;
+    color: rgb(100, 100, 100);
+    grid-area: description;
+}
+
+.feature-card img {
+    grid-area: last;
+    background: white;
+    color: rgb(100, 100, 100);
+}
+
+.attribution {
+    font-size: 20px;
+    text-align: center;
+    margin: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.supervisor {
+    border-top: 10px solid rgb(161, 211, 211);
+}
+
+.team-builder {
+    border-top: 10px solid #db3d57;
+}
+
+.karma {
+    border-top: 10px solid rgb(244, 193, 32);
+}
+
+.calculator {
+    border-top: 10px solid rgb(96, 151, 209);
+}
